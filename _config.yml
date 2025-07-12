@@ -4,12 +4,12 @@
 
 # Site
 title: Hexo
-subtitle: ''
-description: ''
+subtitle: '静心思考，沉浸学习'
+description: '技术分享 | 学习笔记 | 个人成长'
 keywords:
-author: John Doe
+author: Haoran
 language: zh-CN
-timezone: ''
+timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -105,3 +105,4 @@ deploy:
   type: git
   repo: https://github.com/wobushick/Hexo.git
   branch: gh-pages
+  message: '站点更新: {{ now("YYYY-MM-DD HH:mm:ss") }}' 
