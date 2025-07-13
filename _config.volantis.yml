@@ -51,9 +51,6 @@ navbar:
     - name: 归档
       icon: fa-solid fa-archive
       url: archives/
-    - name: 友链
-      icon: fa-solid fa-link
-      url: friends/
     - name: 关于
       icon: fa-solid fa-info-circle
       url: about/
@@ -81,16 +78,13 @@ cover:
       url: archives/
     - name: 关于
       url: /about/
-pages:
-  friends:
-    layout_scheme: traditional
 article:
   preview:
     scheme: landscape
     pin_icon: volantis-static/media/twemoji/assets/svg/1f4cc.svg
     auto_title: true
     auto_excerpt: true
-    author: false
+    author: true
     readmore: auto
   body:
     top_meta: [author, category, date, counter]
@@ -106,7 +100,7 @@ article:
     meta_library:
       author:
         avatar: volantis-static/media/org.volantis/blog/favicon/apple-touch-icon.png
-        name: 请设置文章作者
+        name: haoren
         url: /
       date:
         icon: fa-solid fa-calendar-alt
@@ -147,15 +141,16 @@ sidebar:
       avatar: https://i.postimg.cc/Bn2W6tTd/0cdd3d3af11da635bae8ac1b32495f800516f739.jpg
       shape: rectangle
       url: /about/
-      title: dajiahao
+      title: Haoren
       jinrishici: true
-      social:
-        - icon: fa-solid fa-rss
-          url: /atom.xml
+      social: 
         - icon: fa-solid fa-envelope
-          url: mailto:2109544755@qq.com
-        - icon: fab fa-github
-          url: https://github.com/volantis-x/
+          url: https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=w9yL2%2B7%2B9%2B9%2B9%2B9%2B9%40qq.com
+        - icon: fa-brands fa-github
+          url: https://github.com/wobushick/Hexo
+        - icon: fa-brands fa-bilibili
+          url: https://space.bilibili.com/453458862?spm_id_from=333.1007.0.0
+
     toc:
       class: toc
       display: [desktop, mobile]
@@ -255,10 +250,6 @@ plugins:
     css: volantis-static/libs/@fancyapps/ui/dist/fancybox.css
     js: volantis-static/libs/@fancyapps/ui/dist/fancybox.umd.js
   sitesjs:
-    enable: true
-  friendsjs:
-    enable: true
-  contributorsjs:
     enable: true
   preload:
     enable: true
@@ -378,7 +369,7 @@ plugins:
     css: volantis-static/libs/swiper/swiper-bundle.min.css
     js: volantis-static/libs/swiper/swiper-bundle.min.js
 rightmenu:
-  enable: true
+  enable: false
 color_scheme:
   common:
     theme: '#3A9FBF'
