@@ -285,8 +285,8 @@ plugins:
     enable: true
     position: cover
     shuffle: true
-    duration: 10000
-    fade: 1500
+    duration: 30000
+    fade: 3
     images:
       - volantis-static/media/wallpaper/minimalist/2020/001.webp
       - volantis-static/media/wallpaper/minimalist/2020/002.webp
@@ -492,7 +492,7 @@ seo:
     category: noindex,follow
     tag: noindex,follow
 open_graph:
-  image: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png
+  image: https://i.postimg.cc/FKczPrT7/icon.png
   twitter_card: summary
 structured_data:
   enable: true
@@ -501,6 +501,6 @@ structured_data:
       sns:
         - https://github.com/volantis-x
     logo:
-      path: volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png
+      path: https://i.postimg.cc/FKczPrT7/icon.png
       width: 192
       height: 192
