@@ -1,6 +1,6 @@
 ---
 title: DML数据操作
-date: 2013/7/15
+date: 2025/7/15
 categories: [数据库,DML,HQL]
 tags: [数据库,Hive]
 description: HQL、DML、数据平台相关操作

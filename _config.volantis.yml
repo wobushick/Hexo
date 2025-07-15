@@ -1,4 +1,4 @@
-debug: env
+# debug: env
 default:
   avatar: volantis-static/media/placeholder/avatar/round/3442075.svg
   link: volantis-static/media/placeholder/link/8f277b4ee0ecd.svg
@@ -26,7 +26,6 @@ cdn:
   use: jsdelivr
 cdn_version: true
 volantis_static_cdn: https://cdn.jsdelivr.net/npm/volantis-static@latest/
-# volantis_static_cdn: https://unpkg.com/volantis-static@0.0.1654736714924/
 content_visibility: false
 replace:
   - https://cdn.jsdelivr.net/npm/ => https://unpkg.com/
@@ -37,7 +36,6 @@ scroll_smooth: true
 navbar:
   visiable: auto
   logo:
-
   menu:
     - name: 博客
       icon: fa-solid fa-rss
@@ -87,7 +85,7 @@ article:
     author: true
     readmore: auto
   body:
-    top_meta: [author, category, date, counter]
+    top_meta: [author, category, date]
     bottom_meta: [updated, tags, share]
     footer_widget:
       references:
@@ -110,12 +108,6 @@ article:
         icon: fa-solid fa-edit
         title: '更新于：'
         format: 'll'
-      counter:
-        icon: fa-solid fa-eye
-        unit: '次浏览'
-      walinecount:
-        icon: fa-solid fa-comment-dots
-        desc: '条评论'
       tags:
         icon: fa-solid fa-hashtag
       share:
@@ -150,7 +142,6 @@ sidebar:
           url: https://github.com/wobushick/Hexo
         - icon: fa-brands fa-bilibili
           url: https://space.bilibili.com/453458862?spm_id_from=333.1007.0.0
-
     toc:
       class: toc
       display: [desktop, mobile]
@@ -222,15 +213,10 @@ tag_plugins:
   link:
     placeholder: volantis-static/media/org.volantis/logo/256/safari.png
 site_footer:
-  layout: [aplayer, social, license,copyright, custom]  # 增加custom
-  custom: |
-    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  layout: [aplayer, social, license, copyright]
   social:
     - icon: fa-solid fa-rss
   source: https://github.com/volantis-x/volantis-docs/
-  analytics: |
-    <span id="busuanzi_container_site_pv">本站总访问量 <span id="busuanzi_value_site_pv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 次</span>
-    <span id="busuanzi_container_site_uv">访客数 <span id="busuanzi_value_site_uv"><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span> 人</span>
   copyright: '[Copyright © since 2017 Hexo. All rights reserved.](/)'
   br: '<br>'
 plugins:
